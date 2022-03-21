@@ -15,7 +15,6 @@ export default class VideoPlayer {
 
                     this.createPlayer(path);
                 }
-
             });
         });
     }
