@@ -2846,6 +2846,7 @@ function () {
       items.forEach(function (item, i, arr) {
         if (i !== arr.length - 1) {
           item.style.display = 'none';
+          item.classList.remove('animated', 'fadeIn');
         }
       });
     }
@@ -2855,9 +2856,11 @@ function () {
       container.querySelector('.plus').addEventListener('click', function () {
         if (counter !== items.length - 2) {
           items[counter].style.display = 'flex';
+          items[counter].classList.add('animated', 'fadeIn');
           counter++;
         } else {
           items[counter].style.display = 'flex';
+          items[counter].classList.add('animated', 'fadeIn');
           items[items.length - 1].remove();
         }
       });

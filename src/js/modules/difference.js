@@ -13,6 +13,7 @@ export default class Difference {
         items.forEach((item, i, arr) => {
             if (i !== arr.length - 1) {
                 item.style.display = 'none';
+                item.classList.remove('animated', 'fadeIn');
             }
         });
     }
@@ -21,14 +22,15 @@ export default class Difference {
         container.querySelector('.plus').addEventListener('click', () => {
             if (counter !== items.length - 2) {
                 items[counter].style.display = 'flex';
+                items[counter].classList.add('animated', 'fadeIn');
                 counter++;
             } else {
                 items[counter].style.display = 'flex';
+                items[counter].classList.add('animated', 'fadeIn');
                 items[items.length - 1].remove();
             }
         });
     }
-
 
     init() {
         this.hideItems(this.newItems);
