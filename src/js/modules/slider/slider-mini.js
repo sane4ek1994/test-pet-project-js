@@ -35,8 +35,8 @@ export default class MiniSlider extends Slider {
             this.container.appendChild(this.slides[1]); // btn
             this.decorizeSlides();
         } else {
-        this.container.appendChild(this.slides[0]);
-        this.decorizeSlides();
+            this.container.appendChild(this.slides[0]);
+            this.decorizeSlides();
         }
     }
 
