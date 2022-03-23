@@ -3,8 +3,6 @@ export default class Slider {
          btns=null,
          next=null,
          prev=null,
-         moduleNext=null,
-         modulePrev=null,
          activeClass = '',
          animate,
          autoPlay} = {}) {
